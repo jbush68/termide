@@ -19,7 +19,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.hrtty = import /etc/nixos/home.nix;
+          home-manager.users.hrtty = import ./home/hrtty/hm/home.nix;
         }
       ];
     };
