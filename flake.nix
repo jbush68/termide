@@ -13,7 +13,7 @@
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       modules = [
-        ./configuration.nix
+        ./osconfig/configuration.nix
 
         home-manager.nixosModules.home-manager
         {
