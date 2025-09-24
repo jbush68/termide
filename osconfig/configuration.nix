@@ -77,6 +77,7 @@
   environment.systemPackages = with pkgs; [
     git
     wget
+    tmux
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
