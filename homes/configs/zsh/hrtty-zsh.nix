@@ -51,8 +51,8 @@
     # async
     enable = true;
     # extraConfig
-    highlightStyle = "fg=cyan";
-    strategy = [ "completion" ]; 
+    # highlightStyle = "fg=cyan";
+    # strategy = [ "completion" ]; 
   };
 
 }
