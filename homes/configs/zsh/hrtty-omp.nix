@@ -1,5 +1,3 @@
-{ config, pkgs, ... }:
-
 {
 ### Top Level Config ###
 
@@ -10,6 +8,6 @@
   enableZshIntegration = true;
   # package
   # settings
-  # useTheme = "stelbent.minimal";
+  useTheme = "stelbent.minimal";
 
 }

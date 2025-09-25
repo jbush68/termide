@@ -54,7 +54,7 @@
     home-manager.enable = true;
 
     zsh = import ./configs/zsh/hrtty-zsh.nix;
-    # oh-my-posh = import ./configs/zsh/hrtty-omp.nix;
+    oh-my-posh = import ./configs/zsh/hrtty-omp.nix;
     
 
   };
