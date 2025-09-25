@@ -47,12 +47,12 @@
 
 ### AutoSuggestions ###
 
-  autosuggestions = {
+  # autosuggestions = {
     # async
-    enable = true;
+    # enable = true;
     # extraConfig
     # highlightStyle = "fg=cyan";
     # strategy = [ "completion" ]; 
-  };
+  # };
 
 }
