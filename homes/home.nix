@@ -15,7 +15,7 @@
     fzf           # Fuzzy finder because remember is for dorks
     ripgrep-all   # Better ripgrep (which is a better grep!)
     tealdeer      # Fast manual in rust
-    tre           # Directory hierarchy
+    tre-command   # Directory hierarchy
     zoxide        # Ultra-cd
     tmux          # *ALL* the terminals
     
