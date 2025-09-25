@@ -3,7 +3,7 @@
 {
   home.username = "hrtty";
   home.homeDirectory = "/home/hrtty";
-  shell = pkgs.zsh;
+
 
 ################ User Packages ################
 
