@@ -7,9 +7,9 @@
   # enableBashIntegration
   # enableFishIntegration
   # enableNuShellIntegration
-  # enableZshIntegration = true;
+  enableZshIntegration = true;
   # package
   # settings
-  useTheme = "stelbent.minimal";
+  # useTheme = "stelbent.minimal";
 
 }
