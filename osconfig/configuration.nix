@@ -67,7 +67,7 @@
     description = "hrtty";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
-    shell = zsh;
+    shell = pkgs.zsh;
   };
 
   # Allow unfree packages
