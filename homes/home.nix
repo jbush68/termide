@@ -3,12 +3,15 @@
 {
   home.username = "hrtty";
   home.homeDirectory = "/home/hrtty";
+  shell = pkgs.zsh;
+
+################ User Packages ################
 
   home.packages = with pkgs; [
 
     # Core Shell
     zsh
-    oh-my-zsh
+    oh-my-posh
     nh
 
     # Terminal Navigation
@@ -43,6 +46,18 @@
     httpie        # Command Line HTTP client
 
   ];
+
+################ PROGRAM CONFIGURATION  ################
+
+  programs = {
+
+    home-manager.enable = true;
+
+    zsh = import ./configs/zsh/hrtty-zsh.nix;
+    oh-my-posh = import ./configs/zsh/hrtty-omp.nix;
+    
+
+  };
 
   home.stateVersion = "25.05"; # DO NOT CHANGE
 }
