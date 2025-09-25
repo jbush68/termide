@@ -49,7 +49,7 @@
 
 ################ PROGRAM CONFIGURATION  ################
 
-  programs = {
+  home.programs = {
 
     home-manager.enable = true;
 
