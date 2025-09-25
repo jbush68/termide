@@ -68,7 +68,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
     shell = pkgs.zsh;
-    programs.zsh.enable = true;
   };
 
   # Allow unfree packages
@@ -80,7 +79,10 @@
     git
     wget
     tmux
+    zsh
   ];
+
+  programs.zsh.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
