@@ -68,6 +68,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
     shell = pkgs.zsh;
+    programs.zsh.enable = true;
   };
 
   # Allow unfree packages
