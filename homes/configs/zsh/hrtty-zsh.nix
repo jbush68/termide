@@ -5,7 +5,7 @@
   # enableBashCompletion
   enableCompletion = true;
   # enableGlobalCompInit
-  enableLsColors = true;
+  # enableLsColors = true;
   # histFile
   histSize = 5000;
   # interactiveShellInit
