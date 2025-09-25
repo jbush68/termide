@@ -10,7 +10,6 @@
     zsh
     oh-my-zsh
     nh
-    starship
 
     # Terminal Navigation
     fzf           # Fuzzy finder because remember is for dorks
