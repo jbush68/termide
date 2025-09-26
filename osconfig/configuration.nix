@@ -53,7 +53,7 @@
   };
 
   # Configure Default TTY Output
-  services.kmscon = import ./kmsconfig.nix;
+  services.kmscon = {import ./kmsconfig.nix};
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.hrtty = {
