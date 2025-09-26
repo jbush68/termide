@@ -53,13 +53,7 @@
   };
 
   # Configure Default TTY Output
-  services.kmscon = {
-    enable = true;
-    hwRender = true;
-    useXkbConfig = true;
-    # extraOptions = "";
-    fonts = [ { name = "DepartureMono"; package = pkgs.departure-mono; } ];
-  };
+  services.kmscon = import ./kmsconfig.nix;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.hrtty = {
