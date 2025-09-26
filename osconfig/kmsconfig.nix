@@ -1,6 +1,6 @@
 { pkgs, ... }:
 
-{
+with services.kmscon; {
   enable = true;
   hwRender = true;
   useXkbConfig = true;
