@@ -82,7 +82,7 @@
     fonts = [ { name = "DepartureMono"; package = pkgs.departure-mono; } ];
 
     # Custom color config... help meeeeee
-    # extraConfig = ''
+    extraConfig = ''
     #  palette custom
     #  palette-black=29, 32, 33
     #  palette-red=204, 36, 29
@@ -102,8 +102,8 @@
     #  palette-white=251, 241, 199
     #  palette-foreground=235, 219, 178
     #  palette-background=40, 40, 40
-    #  font-size=14
-    #  '';
+      font-size=14
+    '';
   };
 
   # Some programs need SUID wrappers, can be configured further or are
