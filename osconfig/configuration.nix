@@ -82,7 +82,7 @@
     fonts = [ { name = "DepartureMono"; package = pkgs.departure-mono; } ];
 
     # Custom color config... help meeeeee
-    extraOptions = 
+    extraConfig = 
       ''
         palette custom
         palette-black=29, 32, 33
