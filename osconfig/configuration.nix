@@ -57,7 +57,7 @@
     enable = true;
     hwRender = true;
     useXkbConfig = true;
-    extraOptions = "--term xterm-256color";
+    # extraOptions = "";
     fonts = [ { name = "DepartureMono"; package = pkgs.departure-mono; } ];
   };
 

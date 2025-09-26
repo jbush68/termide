@@ -55,7 +55,9 @@
 
     zsh = import ./configs/zsh/hrtty-zsh.nix;
     oh-my-posh = import ./configs/zsh/hrtty-omp.nix;
-    
+    nh = import ./configs/nh/hrtty-nh.nix;
+
+    # fzf = import ./configs/zsh/hrtty-fzf.nix;
 
   };
 
