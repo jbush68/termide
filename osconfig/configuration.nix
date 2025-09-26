@@ -58,7 +58,7 @@
     hwRender = true;
     useXkbConfig = true;
     # extraOptions = "";
-    fonts = [ { name = "departure-mono"; package = pkgs.nerd-fonts.departure-mono; } ];
+    fonts = [ { name = "departure-mono"; package = pkgs.departure-mono; } ];
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
