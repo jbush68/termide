@@ -83,8 +83,8 @@
 
     # Custom color config... help meeeeee
     extraConfig = ''
-    #  palette custom
-    #  palette-black=29, 32, 33
+      palette custom
+      palette-black=29, 32, 33
     #  palette-red=204, 36, 29
     #  palette-green=152, 151, 26
     #  palette-yellow=215, 153, 33
