@@ -16,6 +16,7 @@
 
     # Terminal Navigation
     fzf           # Fuzzy finder because remember is for dorks
+    fd            # Make fzf output better
     ripgrep-all   # Better ripgrep (which is a better grep!)
     tealdeer      # Fast manual in rust
     tre-command   # Directory hierarchy
@@ -57,7 +58,8 @@
     oh-my-posh = import ./configs/zsh/hrtty-omp.nix;
     # nh = import ./configs/nh/hrtty-nh.nix; -> TODO: WHY BROKEN
 
-    # fzf = import ./configs/zsh/hrtty-fzf.nix;
+    fzf = import ./configs/zsh/hrtty-fzf.nix;
+    fd = import ./configs/zsh/hrtty-fd.nix;
 
   };
 
