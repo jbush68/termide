@@ -27,7 +27,7 @@
     "--prompt='> '"
     "--marker='~'"
     "--pointer='>'"
-    "--info'right'"
+    "--info='right'"
   ];
   enable = true;
   # enableBashIntegration
