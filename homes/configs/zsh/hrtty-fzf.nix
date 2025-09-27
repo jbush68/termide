@@ -4,19 +4,19 @@
   changeDirWidgetCommand = "fd -t d . $HOME";
   # DirWidgetOptions
   colors = {
-    "fg" = -1;
-    "fg+" = 15;
-    "bg" = -1;
-    "bg+" = 8;
-    "hl" = 4;
-    "hl+" = 12;
-    "marker" = 10;
-    "prompt" = 1;
-    "spinner" = 3;
-    "pointer" = 5;
-    "border" = 7;
-    "header" = 14;
-    "info" = 6;    
+    "fg" = "-1";
+    "fg+" = "15";
+    "bg" = "-1";
+    "bg+" = "8";
+    "hl" = "4";
+    "hl+" = "12";
+    "marker" = "10";
+    "prompt" = "1";
+    "spinner" = "3";
+    "pointer" = "5";
+    "border" = "7";
+    "header" = "14";
+    "info" = "6";    
   };
   defaultCommand = "fd . $HOME";
   defaultOptions = [
