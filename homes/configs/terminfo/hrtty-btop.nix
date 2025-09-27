@@ -20,6 +20,6 @@
     # background_update = false;
     # mem_graphs = false;
     show_battery = False
-  ''
+  '';
   # themes
 }
