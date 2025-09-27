@@ -68,7 +68,6 @@
     };
     #tmux
 
-    bandwhich = { enable = true; };
     btop = import ./configs/terminfo/hrtty-btop.nix;
 
   };
