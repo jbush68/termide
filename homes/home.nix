@@ -60,6 +60,16 @@
 
     fzf = import ./configs/zsh/hrtty-fzf.nix;
     fd = import ./configs/zsh/hrtty-fd.nix;
+    ripgrep-all = { enable = true; }; # Future Note: Create file if using custom adapters
+    tealdeer = { enable = true; }; # Default config... "good enough"
+    zoxide = {
+      enable = true;
+      enableZshIntegration = true;
+    };
+    #tmux
+
+    bandwhich = { enable = true; };
+    btop = import ./configs/terminfo/hrtty-btop.nix;
 
   };
 
