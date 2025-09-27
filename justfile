@@ -5,4 +5,4 @@ testthis message:
   sudo nixos-rebuild test --flake .
   
 switchit:
-  sudo nixos-build switch --flake .
+  sudo nixos-rebuild switch --flake .

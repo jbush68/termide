@@ -68,7 +68,7 @@
     };
     #tmux
 
-    btop = import ./configs/terminfo/hrtty-btop.nix;
+   # btop = import ./configs/terminfo/hrtty-btop.nix;
 
   };
 
