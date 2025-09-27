@@ -1,7 +1,7 @@
 {
   ### Top Level Config ###
 
-  DirWidgetCommand = "fd -t d . $HOME";
+  changeDirWidgetCommand = "fd -t d . $HOME";
   # DirWidgetOptions
   colors = {
     "fg" = -1;
