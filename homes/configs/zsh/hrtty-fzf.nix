@@ -20,14 +20,14 @@
   };
   defaultCommand = "fd . $HOME";
   defaultOptions = [
-    '--border="sharp"'
-    '--border-label="< Fuzzy Finder >"'
-    '--border-label-pos="0"'
-    '--padding="1,1,0,1"'
-    '--prompt="> "'
-    '--marker="~"'
-    '--pointer=">"'
-    '--info"right"'
+    "--border='sharp'"
+    "--border-label='< Fuzzy Finder >'"
+    "--border-label-pos='0'"
+    "--padding='1,1,0,1'"
+    "--prompt='> '"
+    "--marker='~'"
+    "--pointer='>'"
+    "--info'right'"
   ];
   enable = true;
   # enableBashIntegration
