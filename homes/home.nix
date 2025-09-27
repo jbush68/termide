@@ -32,7 +32,7 @@
     eza           # better exa
     fdupes        # Find duplicates
     hyperfine     # Time commands
-    neofetch      # Unix Porn must have
+    fastfetch     # Unix Porn must have - now ?% faster :3
     procs         # Process monitor
     scc           # Code Statistics
 
@@ -69,6 +69,7 @@
     #tmux
 
     btop = import ./configs/terminfo/hrtty-btop.nix;
+    eza = import ./configs/terminfo/hrtty-eza.nix;
 
   };
 
