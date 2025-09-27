@@ -4,8 +4,8 @@
   enable = true;
   # extraConfig
   # package
-  settings = {
-    color_theme = "TTY";
+  extraConfig = ''
+    color_theme = "TTY"
     # theme_background = false;
     # btruecolor = false;
     # force_tty = false;
@@ -19,7 +19,7 @@
     # clock_format = "/user@/host | %F|%T | /uptime";
     # background_update = false;
     # mem_graphs = false;
-    show_battery = false;
-  };
+    show_battery = False
+  ''
   # themes
 }
