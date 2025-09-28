@@ -5,6 +5,6 @@
 
   enable = true;
   # package
-  settings = pkgs.lib.importJSON ./defatulfast.jsonc;
+  settings = pkgs.lib.importJSON ./defaultfast.jsonc;
 
 }
