@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   ### Top Level Config ###
 
