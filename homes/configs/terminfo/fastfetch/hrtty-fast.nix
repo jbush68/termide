@@ -3,6 +3,6 @@
 
   enable = true;
   # package
-  settings = lib.importJSON ./defatulfast.jsonc;
+  settings = pkgs.lib.importJSON ./defatulfast.jsonc;
 
 }
