@@ -70,6 +70,7 @@
 
     btop = import ./configs/terminfo/hrtty-btop.nix;
     eza = import ./configs/terminfo/hrtty-eza.nix;
+    fastfetch = import ./configs/terminfo/fastfetch/hrtty-fast.nix;
 
   };
 
