@@ -1,0 +1,67 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "final_space": false,
+    "version": 3,
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left", 
+            "segments": [
+                {
+                    "type": "session",
+                    "style": "plain",
+                    "foreground": "default",
+                    "background": "default",
+                    "template": "\u250C\u2524{{ if .SSHSession }}<lightBlue,>\u2666</>{{ else }}<red,>\u2666</>{{ end }} {{ .HostName }} <parentBackground,parentForeground>\u258C</>"
+                },
+                {
+                    "type": "path",
+                    "style": "plain",
+                    "foreground": "black",
+                    "background": "lightWhite",
+                    "properties": {
+                        "folder_separator_icon": " ",
+                        "folder_icon": "\u25BA",
+                        "style": "agnoster_left",
+                        "cycle": ["red", "green", "blue", "magenta"]
+                    }
+                },
+                {
+                    "type": "git",
+                    "style": "plain",
+                    "foreground": "black",
+                    "background": "lightCyan",
+                    "background_templates": [
+                        "{{ if or (.Working.Changed) (.Staging.Changed) }}lightBlue{{ end }}",
+                        "{{ if and (gt .Ahead 0) (gt .Behind 0) }}lightMagenta{{ end }}",
+                        "{{ if gt .Ahead 0 }}lightGreen{{ end }}",
+                        "{{ if gt .Behind 0 }}lightRed{{ end }}"
+                    ],
+                    "template": "Git: {{ .HEAD }}",
+                    "properties": {
+                        "fetch_status": true,
+                        "branch_icon": ""
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "type": "session",
+                    "style": "plain",
+                    "foreground": "default",
+                    "template": "\u2514\u2524<magenta,>{{ .UserName }}</>\u251C\u2500<red,>\u00BB</>"
+                }
+            ]
+        }
+    ],
+    "transient_prompt": {
+        "foreground": "default",
+        "background": "default",
+        "template": "{{ if .Segments.Status.Error }}<lightWhite,red>{{ .Segments.Status.Code }}</>{{ else }} {{ end }}\u251C\u2500<red,>\u00BB</>"
+    }
+}
