@@ -22,7 +22,7 @@
                     "properties": {
                         "folder_separator_icon": " ",
                         "folder_icon": "\u25BA",
-                        "style": "agnoster_short",
+                        "style": "agnoster",
                         "cycle": ["red", "green", "blue", "magenta"]
                     }
                 },
