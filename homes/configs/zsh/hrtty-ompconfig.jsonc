@@ -12,7 +12,7 @@
                     "style": "plain",
                     "foreground": "default",
                     "background": "default",
-                    "template": "\u250C\u2524{{ if .SSHSession }}<lightBlue,>\u2666</>{{ else }}<red,>\u2666</>{{ end }} {{ .HostName }} <lightWhite,>\u25C4</>"
+                    "template": "\u250C\u2524{{ if .SSHSession }}<lightBlue,>\u2666</>{{ else }}<red,>\u2666</>{{ end }} {{ .HostName }} <black,>\u2591\u2592\u2593</>"
                 },
                 {
                     "type": "path",
@@ -37,7 +37,7 @@
                         "{{ if gt .Ahead 0 }}lightGreen{{ end }}",
                         "{{ if gt .Behind 0 }}lightRed{{ end }}"
                     ],
-                    "template": "<parentBackground,background>\u2593\u2592\u2591</> Git: {{ .Commit.Subject }} <background,default>\u25BA</>",
+                    "template": "<parentBackground,background>\u2593\u2592\u2591</> Git: {{ join ', ' .Coomit.Refs.Tags }} <background,default>\u2593\u2592\u2591</>",
                     "properties": {
                         "fetch_status": true,
                         "branch_icon": ""
