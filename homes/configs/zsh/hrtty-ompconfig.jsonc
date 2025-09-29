@@ -37,10 +37,21 @@
                         "{{ if gt .Ahead 0 }}lightGreen{{ end }}",
                         "{{ if gt .Behind 0 }}lightRed{{ end }}"
                     ],
-                    "template": "<parentBackground,background>\u2593\u2592\u2591</> Git: {{ join ', ' .Coomit.Refs.Tags }} <background,default>\u2593\u2592\u2591</>",
+                    "template": "<parentBackground,background>\u2593\u2592\u2591</> {{ .HEAD }}{{if .BranchStatus }}{{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}{{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }}{{ .Staging.String }}{{ end }}<background,default>\u2593\u2592\u2591</>",
                     "properties": {
                         "fetch_status": true,
-                        "branch_icon": ""
+                        "git_icon": "",
+                        "tag_icon": "",
+                        "merge_icon": "\u2196",
+                        "commit_icon": "\u2727",
+                        "branch_icon": "\u2197",
+                        "branch_ahead_icon": "\u2191",
+                        "branch_behind_icon": "\u2193",
+                        "branch_gone_icon": "",
+                        "branch_identical_icon": "",
+                        "cherry_pick_icon": "",
+                        "rebase_icon": "",
+                        "revert_icon": ""
                     }
                 }
             ]
