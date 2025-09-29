@@ -18,7 +18,7 @@
                     "type": "path",
                     "style": "plain",
                     "foreground": "black",
-                    "background": "lightWhite",
+                    "background": "foreground",
                     "properties": {
                         "folder_separator_icon": " ",
                         "folder_icon": "\u25BA",
@@ -37,7 +37,7 @@
                         "{{ if gt .Ahead 0 }}lightGreen{{ end }}",
                         "{{ if gt .Behind 0 }}lightRed{{ end }}"
                     ],
-                    "template": "<parentBackground,background>\u2593\u2592\u2591</> Git: {{ .HEAD.Commit.Subject }} <background,default>\u25BA</>",
+                    "template": "<parentBackground,background>\u2593\u2592\u2591</> Git: {{ .Commit.Subject }} <background,default>\u25BA</>",
                     "properties": {
                         "fetch_status": true,
                         "branch_icon": ""
