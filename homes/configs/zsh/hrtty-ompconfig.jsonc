@@ -3,7 +3,6 @@
     "final_space": true,
     "version": 3,
     "blocks": [
-        // Info Line Left
         {
             "type": "prompt",
             "alignment": "left", 
