@@ -55,7 +55,7 @@
     home-manager.enable = true;
 
     zsh = import ./configs/zsh/hrtty-zsh.nix;
-    oh-my-posh = import ./configs/zsh/hrtty-omp.nix;
+    oh-my-posh = import ./configs/zsh/hrtty-omp.nix pkgs;
     # nh = import ./configs/nh/hrtty-nh.nix; -> TODO: WHY BROKEN
 
     fzf = import ./configs/zsh/hrtty-fzf.nix;

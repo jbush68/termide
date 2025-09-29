@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
 ### Top Level Config ###
 
@@ -7,7 +9,7 @@
   # enableNuShellIntegration
   enableZshIntegration = true;
   # package
-  # settings
-  useTheme = "stelbent.minimal";
+  settings = pkgs.lib.importJSON ./hrtty-ompconfig.jsonc;
+  # useTheme = "stelbent.minimal";
 
 }
