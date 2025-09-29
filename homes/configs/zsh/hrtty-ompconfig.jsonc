@@ -37,7 +37,7 @@
                         "{{ if gt .Ahead 0 }}lightGreen{{ end }}",
                         "{{ if gt .Behind 0 }}lightRed{{ end }}"
                     ],
-                    "template": "<parentBackground,background>\u2593\u2592\u2591</> {{ .HEAD }}{{if .BranchStatus }}{{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}{{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }}{{ .Staging.String }}{{ end }}<background,default>\u2593\u2592\u2591</>",
+                    "template": "<parentBackground,background>\u2593\u2592\u2591</>{{ .HEAD }}{{if .BranchStatus }}{{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}{{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} {{ end }}{{ if .Staging.Changed }}{{ .Staging.String }}{{ end }}{{ .Commit.Subject }}<background,default>\u2593\u2592\u2591</>",
                     "properties": {
                         "fetch_status": true,
                         "git_icon": "",
