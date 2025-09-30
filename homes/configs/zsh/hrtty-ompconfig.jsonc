@@ -5,7 +5,7 @@
     "transient_prompt": {
         "foreground": "default",
         "background": "default",
-        "template": " \u251C\u2500<lightRed,>\u00BB</> {{ if .Segments.Status.Error }}<lightRed,black>{{ .Segments.Time.CurrentDate | date '15:05:05.000' }}</>{{ else }}<lightBlue,>{{ .Segments.Time.CurrentDate | date '15:04:05.000' }}</>{{ end }} <lightRed,>\u00BB</>"
+        "template": " \u251C\u2500<lightRed,>\u00BB</> <lightBlue,>{{ .Segments.Time.CurrentDate | date '15:04:05.000' }}</> <lightRed,>\u00BB</>"
     },
     "blocks": [
         {
@@ -15,6 +15,7 @@
                 {
                     "type": "session",
                     "style": "plain",
+                    "foreground": "default",
                     "background": "default",
                     "template": "\u250C\u2524 {{ if .SSHSession }}<lightBlue,>\u2666</>{{ else }}<red,>\u2666</>{{ end }} {{ .HostName }} "
                 },
@@ -23,7 +24,7 @@
                     "style": "plain",
                     "background": "darkGray",
                     "foreground": "lightWhite",
-                    "template": "<parentBackground,background>\u2593\u2592\u2591</>{{ .Path }}",
+                    "template": "<transparent,background>\u2593\u2592\u2591</> {{ .Path }} ",
                     "properties": {
                         "folder_separator_icon": " ",
                         "folder_icon": "\u25BA",
@@ -43,7 +44,7 @@
                         "status_separator": "\u007E",
                         "status_template": "{{ if eq .Code 0 }}\u221A 0{{ else }}\u2573 {{ .Code }}{{ end }}"
                     },
-                    "template": "<parentBackground,background>\u2593\u2592\u2591</>{{ .String }}"
+                    "template": "<parentBackground,background>\u2593\u2592\u2591</> {{ .String }} "
                 },
                 {
                     "type": "text",
