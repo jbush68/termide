@@ -41,7 +41,7 @@
                     "properties": {
                         "always_enabled": true,
                         "status_separator": "\u007E",
-                        "status_template": "{{ if eq .Code 0 }}\u0000 0{{ else }}\u0000 {{ .Code }}{{ end }}"
+                        "status_template": "{{ if eq .Code 0 }}\u221A 0{{ else }}\u2573 {{ .Code }}{{ end }}"
                     }
                 },
                 {
