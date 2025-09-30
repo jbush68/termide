@@ -5,13 +5,25 @@
     "transient_prompt": {
         "foreground": "default",
         "background": "default",
-        "template": " \u215C\u2500<lightRed,>\u00BB</> {{ if .Segments.Status.Error }}<lightRed,>{{ .Segments.Time.CurrentDate | date .Segments.Time.Format }}</>{{ else }}<lightBlue,>{{ .Segments.Time.CurrentDate | date .Segments.Time.Format }}</>{{ end }} <lightRed,>\u00BB</>"
+        "template": " \u251C\u2500<lightRed,>\u00BB</> {{ if .Segments.Status.Error }}<lightRed,>{{ .Segments.Time.CurrentDate | date .Segments.Time.Format }}</>{{ else }}<lightBlue,>{{ .Segments.Time.CurrentDate | date .Segments.Time.Format }}</>{{ end }} <lightRed,>\u00BB</>"
     },
     "blocks": [
         {
+            "type": "prompt",
+            "alignment": "left",
+            "newline": false,
+            "segments": [
+                {
+                    "type": "text",
+                    "style": "plain",
+                    "template": " \u2502"
+                }
+            ]
+        },
+        {
             "type": "rprompt",
             "alignment": "right",
-            "newline": false,
+            "newline": true,
             "segments": [
                 {
                     "type": "executiontime",
@@ -32,7 +44,7 @@
                     "properties": {
                         "time_format": "15:04:05.000"
                     },
-                    "template": "\u254F {{ .CurrentDate | date '15:04:05' }}"
+                    "template": "\u254F {{ .CurrentDate | date .Format }}"
                 }
             ]
         },
