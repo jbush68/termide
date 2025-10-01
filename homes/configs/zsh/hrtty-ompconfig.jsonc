@@ -9,20 +9,6 @@
     },
     "blocks": [
         {
-            "type": "prompt",
-            "alignment": "left",
-            "newline": false,
-            "segments": [
-                {
-                    "type": "text",
-                    "style": "plain",
-                    "foreground": "default",
-                    "background": "default",
-                    "template": " \u2502"
-                }
-            ]
-        },
-        {
             "type": "rprompt",
             "alignment": "right",
             "newline": false,
