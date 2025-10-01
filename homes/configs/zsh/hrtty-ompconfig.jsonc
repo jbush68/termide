@@ -8,6 +8,18 @@
         "template": " \u251C\u2500<lightRed,>\u00BB</> {{ if .Segments.Status.Error }}<lightRed,>{{ .Segments.Time.CurrentDate | date .Segments.Time.Format }}</>{{ else }}<lightBlue,>{{ .Segments.Time.CurrentDate | date .Segments.Time.Format }}</>{{ end }} <lightRed,>\u00BB</> "
     },
     "blocks": [
+	{
+	    "type": "prompt",
+            "alignment": "left",
+            "newline": "false",
+	    "segments": [
+		{
+		    "type": "text",
+		    "style": "plain",
+		    "template": " \u2502"
+		}
+	    ]
+	},
         {
             "type": "prompt",
             "alignment": "right",
