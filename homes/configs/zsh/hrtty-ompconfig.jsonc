@@ -25,7 +25,7 @@
         {
             "type": "rprompt",
             "alignment": "right",
-            "newline": true,
+            "newline": false,
             "segments": [
                 {
                     "type": "executiontime",
