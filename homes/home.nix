@@ -73,7 +73,7 @@
       enable = true;
       enableZshIntegration = true;
     };
-    tmux = import ./configs/terminfo/hrtty-tmux.nix;
+    tmux = import ./configs/terminfo/hrtty-tmux.nix pkgs;
 
     btop = import ./configs/terminfo/hrtty-btop.nix;
     eza = import ./configs/terminfo/hrtty-eza.nix;
