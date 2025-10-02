@@ -1,4 +1,11 @@
 {
+
   # PROJECT DIRECTORIES -- SPECIAL
-  "/projects" = { enable = true; };
+  "projects/hmfill.txt" = {
+    enable = true;
+    text = ''
+      Filler Text, add something here later
+    '';
+  };
+
 }
