@@ -16,6 +16,7 @@
 		{
 		    "type": "text",
 		    "style": "plain",
+		    "foreground": "default",
 		    "template": " \u2502"
 		}
 	    ]

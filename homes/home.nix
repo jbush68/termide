@@ -1,9 +1,16 @@
 { config, pkgs, ... }:
 
 {
-  home.username = "hrtty";
-  home.homeDirectory = "/home/hrtty";
+################ Home Directory ################
 
+  home = {
+    
+    username = "hrtty";
+    homeDirectory = "/home/hrtty";
+    # Default Home Files & Directories Here
+    file = import ./users/hrtty-homefiles.nix;
+
+  };
 
 ################ User Packages ################
 
@@ -66,13 +73,15 @@
       enable = true;
       enableZshIntegration = true;
     };
-    #tmux
+    tmux = import ./configs/terminfo/hrtty-tmux.nix;
 
     btop = import ./configs/terminfo/hrtty-btop.nix;
     eza = import ./configs/terminfo/hrtty-eza.nix;
     fastfetch = import ./configs/terminfo/fastfetch/hrtty-fast.nix pkgs;
 
   };
+
+################ STATE VERSION ################
 
   home.stateVersion = "25.05"; # DO NOT CHANGE
 }

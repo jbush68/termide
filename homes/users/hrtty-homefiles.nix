@@ -1,0 +1,4 @@
+{
+  # PROJECT DIRECTORIES -- SPECIAL
+  "/projects";
+}
