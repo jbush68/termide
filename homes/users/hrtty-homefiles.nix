@@ -1,4 +1,4 @@
 {
   # PROJECT DIRECTORIES -- SPECIAL
-  "/projects";
+  "/projects" = { enabled = true; };
 }
