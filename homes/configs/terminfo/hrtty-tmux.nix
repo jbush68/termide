@@ -62,7 +62,7 @@
         set -g status-right-length 70
         set -g status-left-length 40
         set -g status-right "#[fg=brightWhite,bg=blue] #{weather} #[default] #{sysstat_cpu}#[default] #{sysstat_mem}#[default] #{tmux_mode_indicator}"
-        set -g status-left "#[fg=black,bg=yellow]%F#[fg=yellow,bg=green]\u258C#[default]%T#[fg=green,bg=lightMagenta]\u258C#[fg=black,bg=lightMagenta] #(cat /proc/uptime | cut -d ' ' -f 1 | xargs -I int date -u -d @int +'%d:%T') #[default] [#S] "
+        set -g status-left "#[fg=black,bg=yellow]%F#[fg=yellow,bg=green]\u258C#[default]%T#[fg=green,bg=lightMagenta]\u258C#[fg=black,bg=lightMagenta] #(cat /proc/uptime | cut -d ' ' -f 1) #[default] [#S] "
       '';
     }
     pkgs.tmuxPlugins.sysstat
