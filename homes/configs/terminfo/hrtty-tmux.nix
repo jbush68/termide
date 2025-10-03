@@ -58,7 +58,7 @@
         set -g @sysstat_cpu_view_tmpl "#[bg=#{cpu.color},fg=brightWhite]CPU:#{cpu.pused}"
         set -g @sysstat_mem_view_tmpl "#[bg=#{mem.color},fg=brightWhite]MEM:#{mem.pused}"
         set -g status-right-length 60
-        set -g status-right "#{weather} #{sysstat_cpu} #{sysstat_mem} #(echo $USER is a stinker)"
+        set -g status-right "#{weather} #{sysstat_cpu} #{sysstat_mem}#[default] #(echo $USER)"
       '';
     }
     pkgs.tmuxPlugins.sysstat
