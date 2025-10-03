@@ -72,8 +72,8 @@
         set -g status-right-length 70
         set -g status-left-length 50
         set -g allow-rename off
-        set -g pane-border-style "fg=red"
-        set -g pane-active-border-style "fg=cyan"
+        set -g pane-border-style "fg=lightCyan"
+        set -g pane-active-border-style "fg=lightCyan"
         set -g pane-border-status top
         set -g pane-border-format "\u2562 #{pane_title} \u255f"
         set -g status-right "#[fg=brightWhite,bg=blue] #{weather} #[default] #{sysstat_cpu}#[default] #{sysstat_mem}#[default] #{tmux_mode_indicator}"
