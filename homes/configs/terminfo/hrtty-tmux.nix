@@ -41,22 +41,22 @@
   plugins = [
   
     # Todo: Setup Pass
-    tmuxPlugins.tilish
+    pkgs.tmuxPlugins.tilish
     {
-      plugin = tmuxPlugins.weather;
+      plugin = pkgs.tmuxPlugins.weather;
       extraConfig = ''
         set -g status-right "#{weather} #(echo $USER is a stinker)"
       '';
     }
-    tmuxPlugins.sysstat
-    tmuxPlugins.sidebar
-    tmuxPlugins.logging
-    tmuxPlugins.tmux-fzf
-    tmuxPlugins.sensible
-    tmuxPlugins.fuzzback
-    tmuxPlugins.extrakto
-    tmuxPlugins.sessionist
-    tmuxPlugins.mode-indicator        
+    pkgs.tmuxPlugins.sysstat
+    pkgs.tmuxPlugins.sidebar
+    pkgs.tmuxPlugins.logging
+    pkgs.tmuxPlugins.tmux-fzf
+    pkgs.tmuxPlugins.sensible
+    pkgs.tmuxPlugins.fuzzback
+    pkgs.tmuxPlugins.extrakto
+    pkgs.tmuxPlugins.sessionist
+    pkgs.tmuxPlugins.mode-indicator        
 
   ];
 
