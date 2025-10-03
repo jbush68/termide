@@ -62,7 +62,7 @@
         set -g status-right-length 70
         set -g status-left-length 40
         set -g status-right "#[fg=brightWhite,bg=blue] #{weather} #[default] #{sysstat_cpu}#[default] #{sysstat_mem}#[default] #{tmux_mode_indicator}"
-        set -g status-left "#[fg=black,bg=yellow]%F#[fg=yellow,bg=green]\u258C#[default]%T#[fg=green,bg=colour13]\u258C#[fg=black,bg=colour13] #(sh /etc/nixos/homes/configs/terminfo/uptimeabbr.sh) #[default] [#S] "
+        set -g status-left "#[fg=black,bg=yellow] %F #[fg=yellow,bg=green]\u258C#[default] %T #[fg=green,bg=colour13]\u258C#[fg=black,bg=colour13] #(sh /etc/nixos/homes/configs/terminfo/uptimeabbr.sh) #[default] \u2551  [#S] "
       '';
     }
     pkgs.tmuxPlugins.sysstat
