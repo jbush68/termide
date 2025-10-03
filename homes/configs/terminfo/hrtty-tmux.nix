@@ -57,7 +57,7 @@
 
 
   extraConfig = ''
-    set -g @tilish-default 'main-horizontal'
+    set -g @tilish-default 'main-vertical'
     set -g @tilish-enforce 'none'
     set -g @tilish-createauto 'off'
     set -g @tilish-project '$HOME/projects'
@@ -71,15 +71,15 @@
     set -g @tmux-weather-location "Chicago"
     set -g @tmux-weather-units "m"
     set -g @tmux-weather-format "%l:+%C+%w+%t"
-    set -g @sysstat_cpu_color_low "brightBlack"
-    set -g @sysstat_cpu_color_medium "yellow"
-    set -g @sysstat_cpu_color_stress "red"
-    set -g @sysstat_mem_color_low "brightBlack"
-    set -g @sysstat_mem_color_medium "yellow"
-    set -g @sysstat_mem_color_stress "red"
-    set -g @sysstat_cpu_view_tmpl '#[bg=#{cpu.color},fg=white]CPU:#{cpu.pused}'
-    set -g @sysstat_mem_view_tmpl '#[bg=#{mem.color},fg=white]CPU:#{mem.pused}'
-    set -g status-right '#{weather} #{sysstat_cpu} #{sysstat_mem} #[default]#(echo $USER)'
+    # set -g @sysstat_cpu_color_low "brightBlack"
+    # set -g @sysstat_cpu_color_medium "yellow"
+    # set -g @sysstat_cpu_color_stress "red"
+    # set -g @sysstat_mem_color_low "brightBlack"
+    # set -g @sysstat_mem_color_medium "yellow"
+    # set -g @sysstat_mem_color_stress "red"
+    # set -g @sysstat_cpu_view_tmpl '#[bg=#{cpu.color},fg=white]CPU:#{cpu.pused}'
+    # set -g @sysstat_mem_view_tmpl '#[bg=#{mem.color},fg=white]CPU:#{mem.pused}'
+    set -g status-right '#{weather} #(echo $USER)'
   '';
 
 }
