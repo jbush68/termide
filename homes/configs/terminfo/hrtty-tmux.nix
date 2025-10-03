@@ -38,7 +38,7 @@
 
 
   ### Tmux Plugins ###
-  plugins = with pkgs.tmuxPlugins; [
+  plugins = [
   
     # Todo: Setup Pass
     tmuxPlugins.tilish
