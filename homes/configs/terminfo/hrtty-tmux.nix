@@ -60,7 +60,9 @@
         set -g @sysstat_cpu_view_tmpl "#[bg=#{cpu.color},fg=brightWhite] CPU:#{cpu.pused} "
         set -g @sysstat_mem_view_tmpl "#[bg=#{mem.color},fg=brightWhite] MEM:#{mem.pused} "
         set -g status-right-length 70
-        set -g status-right "#[fg=brightWhite,bg=blue] #{weather} #[default] #{sysstat_cpu}#[default] #{sysstat_mem}#[default] #(echo $USER) #{tmux_mode_indicator}"
+        set -g status-left-length 25
+        set -g status-right "#[fg=brightWhite,bg=blue] #{weather} #[default] #{sysstat_cpu}#[default] #{sysstat_mem}#[default] #{tmux_mode_indicator}"
+        set -g status-left "%F:%T [#S]"
       '';
     }
     pkgs.tmuxPlugins.sysstat
