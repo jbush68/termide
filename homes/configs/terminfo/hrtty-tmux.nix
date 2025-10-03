@@ -41,17 +41,22 @@
   plugins = with pkgs.tmuxPlugins; [
   
     # Todo: Setup Pass
-    tilish
-    weather
-    sysstat
-    sidebar
-    logging
-    tmux-fzf
-    sensible
-    fuzzback
-    extrakto
-    sessionist
-    mode-indicator        
+    tmuxPlugins.tilish
+    {
+      plugin = tmuxPlugins.weather;
+      extraConfig = ''
+        set -g status-right "#{weather} #(echo $USER is a stinker)"
+      '';
+    }
+    tmuxPlugins.sysstat
+    tmuxPlugins.sidebar
+    tmuxPlugins.logging
+    tmuxPlugins.tmux-fzf
+    tmuxPlugins.sensible
+    tmuxPlugins.fuzzback
+    tmuxPlugins.extrakto
+    tmuxPlugins.sessionist
+    tmuxPlugins.mode-indicator        
 
   ];
 
@@ -67,7 +72,6 @@
     set -g @fuzzback-popup 1
     set -g @fuzzback-hide-preview 1
     set -g @extrakto_key `
-    set -g status-right '#{weather} #(echo $USER is a stinker)'
   '';
 
 }
