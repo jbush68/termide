@@ -6,7 +6,7 @@
   # completionInit
   # defaultKeymap
   dirHashes = { systemconfigs = "./etc/nixos"; };
-  dotDir = ".config/zsh";
+  dotDir = "~/.config/zsh";
   enable = true;
   enableCompletion = true;
   # enableVteIntegration

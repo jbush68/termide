@@ -67,7 +67,7 @@
     set -g @fuzzback-popup 1
     set -g @fuzzback-hide-preview 1
     set -g @extrakto_key `
-    set -g status-right '#{weather} #(echo $USER)'
+    set -g status-right '#{weather} #(echo $USER is a stinker)'
   '';
 
 }
