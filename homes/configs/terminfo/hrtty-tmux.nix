@@ -49,12 +49,14 @@
         set -g @tmux-weather-location "Chicago"
         set -g @tmux-weather-units "m"
         set -g @tmux-weather-format "%l:+%C+%w+%t"
-        set -g @sysstat_cpu_color_low "gray"
+        set -g @sysstat_cpu_color_low "Dark"
         set -g @sysstat_cpu_color_medium "yellow"
         set -g @sysstat_cpu_color_stress "red"
-        set -g @sysstat_mem_color_low "gray"
+        set -g @sysstat_mem_color_low "darkGray"
         set -g @sysstat_mem_color_medium "yellow"
         set -g @sysstat_mem_color_stress "red"
+        set -g status-bg default
+        set -g status-fg default
         set -g @sysstat_cpu_view_tmpl "#[bg=#{cpu.color},fg=brightWhite]CPU:#{cpu.pused}"
         set -g @sysstat_mem_view_tmpl "#[bg=#{mem.color},fg=brightWhite]MEM:#{mem.pused}"
         set -g status-right-length 60
