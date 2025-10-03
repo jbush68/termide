@@ -6,7 +6,7 @@
   # completionInit
   # defaultKeymap
   dirHashes = { systemconfigs = "./etc/nixos"; };
-  dotDir = "~/.config/zsh";
+  dotDir = ".config/zsh";
   enable = true;
   enableCompletion = true;
   # enableVteIntegration
@@ -48,7 +48,7 @@
     ignoreDups = true;
     # ignorePatterns
     # ignoreSpace
-    path = ".config/zsh/.zsh_history";
+    path = "$HOME/.config/zsh/.zsh_history";
     save = 7500;
     saveNoDups = true;
     share = true;
