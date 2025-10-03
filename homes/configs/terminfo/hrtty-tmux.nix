@@ -72,6 +72,10 @@
         set -g status-right-length 70
         set -g status-left-length 50
         set -g allow-rename off
+        set -g pane-border-style "fg=red"
+        set -g pane-active-border-style "fg=cyan"
+        set -g pane-border-status top
+        set -g pane-border-format "\u2562 #{pane_title} \u255f"
         set -g status-right "#[fg=brightWhite,bg=blue] #{weather} #[default] #{sysstat_cpu}#[default] #{sysstat_mem}#[default] #{tmux_mode_indicator}"
         set -g status-left "#[fg=black,bg=yellow] %F #[fg=yellow,bg=green]\u258C#[default] %T #[fg=green,bg=colour13]\u258C#[fg=black,bg=colour13] #(sh /etc/nixos/homes/configs/terminfo/uptimeabbr.sh) #[default]\u2551 [#S] "
       '';
