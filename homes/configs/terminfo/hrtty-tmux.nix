@@ -55,7 +55,7 @@
         set -g @tilish-createauto 'off'
         set -g @tilish-project '$HOME/projects'
         set -g @tilish-enforce 'none'
-        set -g @tmux-weather-interval 5
+        set -g @tmux-weather-interval 15
         set -g @tmux-weather-location "Chicago"
         set -g @tmux-weather-units "m"
         set -g @tmux-weather-format "%l:+%C+%w+%t"

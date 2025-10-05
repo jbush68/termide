@@ -53,6 +53,9 @@
     jq            # Easily Query JSON from CLI
     httpie        # Command Line HTTP client
 
+    # Neovim... oh fuck
+    
+
   ];
 
 ################ PROGRAM CONFIGURATION  ################
