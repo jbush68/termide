@@ -5,7 +5,7 @@
   # cdpath
   # completionInit
   # defaultKeymap
-  dirHashes = { systemconfigs = "./etc/nixos"; };
+  # dirHashes
   dotDir = ".config/zsh";
   enable = true;
   enableCompletion = true;
