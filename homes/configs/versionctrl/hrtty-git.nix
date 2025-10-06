@@ -15,7 +15,7 @@
 
   ### Delta ###
   delta = {
-    enable = true
+    enable = true;
   };
 
 
