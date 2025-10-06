@@ -33,7 +33,7 @@
     # Terminal Information
     bandwhich     # Bandwidth stats
     btop          # Resource monitoring
-    diff-so-fancy # Git differences that look good
+    delta         # Git Highlighting 
     duf           # Disk Utility Info
     dua           # Disk analyzer
     eza           # better exa
@@ -55,6 +55,9 @@
 
     # Neovim... oh fuck
     
+    # Git, Github, and more
+    git
+    gh
 
   ];
 
@@ -63,24 +66,31 @@
   programs = {
 
     home-manager.enable = true;
-
+    
+    ### Core Shell ###
     zsh = import ./configs/zsh/hrtty-zsh.nix;
     oh-my-posh = import ./configs/zsh/hrtty-omp.nix pkgs;
     # nh = import ./configs/nh/hrtty-nh.nix; -> TODO: WHY BROKEN
 
+    ### Terminal Tools ###
+    fastfetch = import ./configs/terminfo/fastfetch/hrtty-fast.nix pkgs;
+    eza = import ./configs/terminfo/hrtty-eza.nix;
+    btop = import ./configs/terminfo/hrtty-btop.nix;
+    tmux = import ./configs/terminfo/hrtty-tmux.nix pkgs;
     fzf = import ./configs/zsh/hrtty-fzf.nix;
     fd = import ./configs/zsh/hrtty-fd.nix;
+
     ripgrep-all = { enable = true; }; # Future Note: Create file if using custom adapters
     tealdeer = { enable = true; }; # Default config... "good enough"
     zoxide = {
       enable = true;
       enableZshIntegration = true;
     };
-    tmux = import ./configs/terminfo/hrtty-tmux.nix pkgs;
 
-    btop = import ./configs/terminfo/hrtty-btop.nix;
-    eza = import ./configs/terminfo/hrtty-eza.nix;
-    fastfetch = import ./configs/terminfo/fastfetch/hrtty-fast.nix pkgs;
+    ### Version Control ###
+    git = import ./configs/versionctrl/hrtty-git.nix;
+
+    gh = { enable = true; } # Further configure if using multiple hosts
 
   };
 
