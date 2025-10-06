@@ -90,7 +90,7 @@
     ### Version Control ###
     git = import ./configs/versionctrl/hrtty-git.nix;
 
-    gh = { enable = true; } # Further configure if using multiple hosts
+    gh = { enable = true; }; # Further configure if using multiple hosts
 
   };
 
