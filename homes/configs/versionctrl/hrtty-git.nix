@@ -9,8 +9,8 @@
   # ignores
   # includes
   # package
-  userEmail = "abush68@proton.me"
-  userName = "abush68"
+  userEmail = "abush68@proton.me";
+  userName = "abush68";
 
 
   ### Delta ###
