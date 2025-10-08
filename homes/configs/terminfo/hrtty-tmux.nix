@@ -77,7 +77,7 @@
         set -g pane-border-status top
         set -g pane-border-format "\u2562 #{pane_title} \u255f"
         set -g status-right "#[fg=brightWhite,bg=blue] #{weather} #[default] #{sysstat_cpu}#[default] #{sysstat_mem}#[default] #{tmux_mode_indicator}"
-        set -g status-left "#[fg=black,bg=yellow] %F #[fg=yellow,bg=green]\u258C#[default] %T #[fg=green,bg=colour13]\u258C#[fg=black,bg=colour13] #(sh /home/hrtty/nixos/homes/configs/terminfo/uptimeabbr.sh) #[default]\u2551 [#S] "
+        set -g status-left "#[fg=black,bg=yellow] %F #[fg=yellow,bg=green]\u258C#[default] %T #[fg=green,bg=colour13]\u258C#[fg=black,bg=colour13] #(sh /home/hrtty/nosconfig/homes/configs/terminfo/uptimeabbr.sh) #[default]\u2551 [#S] "
       '';
     }
     pkgs.tmuxPlugins.tilish

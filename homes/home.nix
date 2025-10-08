@@ -1,6 +1,12 @@
-{ config, pkgs, ... }:
+{ config, pkgs, nixvim, ... }:
 
 {
+################ Imports ################
+
+  imports = [
+    nixvim.homeModules.nixvim
+  ];
+
 ################ Home Directory ################
 
   home = {
@@ -52,12 +58,13 @@
     just          # Simpler Make Files
     jq            # Easily Query JSON from CLI
     httpie        # Command Line HTTP client
-
-    # Neovim... oh fuck
     
     # Git, Github, and more
     git
     gh
+    
+    # Coding Packages - TODO: Modularize
+    typescript
 
   ];
 
@@ -69,14 +76,14 @@
     
     ### Core Shell ###
     zsh = import ./configs/zsh/hrtty-zsh.nix;
-    oh-my-posh = import ./configs/zsh/hrtty-omp.nix pkgs;
+    oh-my-posh = import ./configs/zsh/hrtty-omp.nix { inherit pkgs; };
     # nh = import ./configs/nh/hrtty-nh.nix; -> TODO: WHY BROKEN
 
     ### Terminal Tools ###
-    fastfetch = import ./configs/terminfo/fastfetch/hrtty-fast.nix pkgs;
+    fastfetch = import ./configs/terminfo/fastfetch/hrtty-fast.nix { inherit pkgs; };
     eza = import ./configs/terminfo/hrtty-eza.nix;
     btop = import ./configs/terminfo/hrtty-btop.nix;
-    tmux = import ./configs/terminfo/hrtty-tmux.nix pkgs;
+    tmux = import ./configs/terminfo/hrtty-tmux.nix { inherit pkgs; };
     fzf = import ./configs/zsh/hrtty-fzf.nix;
     fd = import ./configs/zsh/hrtty-fd.nix;
 
@@ -91,6 +98,9 @@
     git = import ./configs/versionctrl/hrtty-git.nix;
 
     gh = { enable = true; }; # Further configure if using multiple hosts
+
+    ### Neovim ###
+    nixvim = import ./configs/neovim/kickstart-nixvim/nixvim.nix { inherit pkgs config; };
 
   };
 

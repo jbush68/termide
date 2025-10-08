@@ -102,7 +102,7 @@
       palette-white=251, 241, 199
       palette-foreground=235, 219, 178
       palette-background=40, 40, 40
-      font-size=14
+      font-size=12
     '';
   };
 
