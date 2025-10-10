@@ -79,7 +79,10 @@
     enable = true;
     hwRender = true;
     useXkbConfig = true;
-    fonts = [ { name = "DepartureMono"; package = pkgs.departure-mono; } ];
+    fonts = [
+      { name = "DepartureMono"; package = pkgs.departure-mono; }
+      { name = "JuliaMono"; package = pkgs.julia-mono; } 
+    ];
 
     # Custom color config... help meeeeee
     extraConfig = ''

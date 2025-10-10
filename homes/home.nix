@@ -100,7 +100,7 @@
     gh = { enable = true; }; # Further configure if using multiple hosts
 
     ### Neovim ###
-    nixvim = import ./configs/neovim/kickstart-nixvim/nixvim.nix { inherit pkgs config; };
+    nixvim = import ./configs/neovim/hrtty-vim.nix { inherit pkgs; }; 
 
   };
 
